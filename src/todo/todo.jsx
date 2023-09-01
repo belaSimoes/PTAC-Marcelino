@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import './estilos.css'
 
 export default function Todo() {
 
@@ -23,7 +23,7 @@ export default function Todo() {
       <Link to="/home">App</Link>
       <form onSubmit={salvar}>
         <input onChange={(e) => setAtividade(e.target.value)} type="text" />
-        <button>Encrementa</button>
+        <button>add</button>
       </form>
       
       {lista.map((atividade) => (
